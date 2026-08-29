@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Watercolors — T.S. Batra</title>
+  <meta name="description" content="A selection of watercolor paintings by T.S. Batra.">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Watercolors — T.S. Batra">
+  <meta property="og:description" content="A selection of watercolor paintings by T.S. Batra.">
+  <meta property="og:url" content="https://tsbatra.github.io/TSB-Art/watercolors/">
+  <meta property="og:image" content="https://ik.imagekit.io/Kamonline/tr:w-1200,h-630,c-at_max,f-jpg,q-80/TSB-ART/FloatingBlooms">
+  <meta property="og:image:secure_url" content="https://ik.imagekit.io/Kamonline/tr:w-1200,h-630,c-at_max,f-jpg,q-80/TSB-ART/FloatingBlooms">
+  <meta property="og:image:type" content="image/jpeg">
+
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: #f5f5f5;
+      color: #222;
+      font-family: Arial, sans-serif;
+    }
+
+    .page {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 32px 20px 48px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 28px;
+    }
+
+    h1 {
+      margin: 0 0 6px;
+      font-size: clamp(28px, 4vw, 44px);
+      font-weight: 600;
+    }
+
+    .artist {
+      margin: 0;
+      color: #666;
+      font-size: 15px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 22px;
+      align-items: start;
+    }
+
+    .card {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    .thumb-wrap {
+      background: #fff;
+      border: 1px solid #ddd;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      aspect-ratio: 4 / 3;
+      overflow: hidden;
+    }
+
+    .thumb {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+    }
+
+    .title {
+      margin-top: 9px;
+      font-size: 14px;
+      line-height: 1.35;
+      text-align: center;
+      color: #333;
+    }
+
+    @media (hover:hover) and (pointer:fine) {
+      .card:hover .thumb-wrap {
+        border-color: #999;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .page {
+        padding: 24px 12px 36px;
+      }
+
+      .gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+      }
+
+      .thumb-wrap {
+        padding: 6px;
+      }
+
+      .title {
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <h1>Watercolors</h1>
+      <p class="artist">T.S. Batra</p>
+    </header>
+
+    <div class="gallery">
+
+      <a class="card" href="floating-blooms.html">
+        <div class="thumb-wrap">
+          <img class="thumb"
+               src="https://ik.imagekit.io/Kamonline/tr:w-500,h-375,c-at_max,f-jpg,q-78/TSB-ART/FloatingBlooms"
+               alt="Floating Blooms">
+        </div>
+        <div class="title">Floating Blooms</div>
+      </a>
+
+      <a class="card" href="SometimeWhat'sInsideShowsOnTheFace.html">
+        <div class="thumb-wrap">
+          <img class="thumb"
+               src="https://ik.imagekit.io/Kamonline/tr:w-500,h-375,c-at_max,f-jpg,q-78/TSB-ART/SometimeWhat'sInsideShowsOnTheFace"
+               alt="Sometime What's Inside Shows on the Face">
+        </div>
+        <div class="title">Sometime What's Inside Shows on the Face</div>
+      </a>
+
+      <a class="card" href="A-Gathering-Within.html">
+        <div class="thumb-wrap">
+          <img class="thumb"
+               src="https://ik.imagekit.io/Kamonline/tr:w-500,h-375,c-at_max,f-jpg,q-78/TSB-ART/AGatheringWithin"
+               alt="A Gathering within">
+        </div>
+        <div class="title">A Gathering within</div>
+      </a>
+
+      <a class="card" href="Emergence-StandingOutOfReflections.html">
+        <div class="thumb-wrap">
+          <img class="thumb"
+               src="https://ik.imagekit.io/Kamonline/tr:w-500,h-375,c-at_max,f-jpg,q-78/TSB-ART/Emergence-StandingOutOfReflections"
+               alt="Emergence — Standing out of reflections">
+        </div>
+        <div class="title">Emergence — Standing out of reflections</div>
+      </a>
+
+      <a class="card" href="calmness.html">
+        <div class="thumb-wrap">
+          <img class="thumb"
+               src="https://ik.imagekit.io/Kamonline/tr:w-500,h-375,c-at_max,f-jpg,q-78/TSB-ART/Calmness"
+               alt="Calmness">
+        </div>
+        <div class="title">Calmness</div>
+      </a>
+
+    </div>
+  </div>
+</body>
+</html>
