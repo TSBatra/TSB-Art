@@ -160,3 +160,26 @@
 .artwork-page .painting {touch-action:pan-y;user-select:none;-webkit-user-drag:none;position:relative;z-index:2;will-change:transform}
 .swipe-preview {position:absolute;inset:0;width:100%;height:100%;object-fit:contain;opacity:0;pointer-events:none;z-index:1;will-change:transform}
 .gallery-page .archive-back {cursor:default}
+
+.artwork-page { overflow-x: clip; }
+.artwork-page .container { width: 100%; min-width: 0; }
+.artwork-page .painting-wrap {
+  width: 100%; max-width: 100%; min-width: 0;
+  box-sizing: border-box; overflow: hidden; position: relative;
+}
+.artwork-page .painting {
+  display: block; width: auto; height: auto; min-width: 0;
+  max-width: 100%; max-height: calc(100dvh - 245px);
+  object-fit: contain; flex: 0 1 auto;
+}
+.artwork-page .swipe-preview {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  max-width: 100%; object-fit: contain;
+}
+@media(max-width:700px) {
+  .artwork-page .container { padding-left: 10px; padding-right: 10px; }
+  .artwork-page .painting-wrap { padding-left: 34px; padding-right: 34px; }
+  .artwork-page .painting {
+    max-width: 100%; max-height: max(180px, calc(100dvh - 205px));
+  }
+}
