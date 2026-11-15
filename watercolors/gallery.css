@@ -154,3 +154,14 @@
   .gallery-page .thumb-wrap {padding:6px}
   .gallery-page .title {font-size:12px}
 }
+
+/* v9.2 experimental mobile-only full-page swipe. No changes to painting fitting. */
+@media (max-width: 700px) and (pointer: coarse) {
+  .swipe-stage { position: relative; z-index: 2; background: #f5f5f5; will-change: transform; }
+  .swipe-preview { position: fixed; top: 0; left: 0; width: 100vw; height: 100dvh;
+    border: 0; background: #f5f5f5; z-index: 1; pointer-events: none;
+    visibility: hidden; will-change: transform; }
+  .swipe-stage.swipe-animate, .swipe-preview.swipe-animate {
+    transition: transform 220ms cubic-bezier(.22,.72,.25,1);
+  }
+}
